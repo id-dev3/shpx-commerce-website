@@ -3,3 +3,33 @@
 @use 'globals/reset';
 @use 'globals/typography';
 
+/// HEADER SECTION ///
+header{
+    .navbar-container{
+        .nav-logo{
+            .logo{
+                color: #4B4B4B;
+                font-family: "DM Serif Display";
+                font-size: 2.25rem;
+                font-weight: 400;
+                line-height: $line-height-setup;
+            }
+        }
+
+        .nav-links{
+            .links{
+                color: #4B4B4B;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: $line-height-setup;
+            }
+        }
+
+        .nav-icons{
+            .fa-solid{
+                color: #4B4B4B;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
