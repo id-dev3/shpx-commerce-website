@@ -83,7 +83,6 @@ main{
 
             h1{
                 font-size: 4rem;
-                line-height: 100%;
                 margin-bottom: 2rem;
                 width: 30.75rem;
             }
@@ -103,6 +102,99 @@ main{
             border-radius: 0 0 0 4.6875rem;
             background: url("../images/bg-hero-section.png") transparent 50% / cover no-repeat;
             margin-left: auto;
+        }
+    }
+
+    .second-section{
+        h2{
+            font-size: 3rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .sort-items{
+            display: flex;
+            justify-content: center;
+
+            .items{
+                color: $main-color;
+                font-size: 1.1rem;
+                font-weight: 500;
+                line-height: 100%;
+                margin-right: 2.5rem;
+            }
+        }
+
+        .items-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: stretch;
+            margin: 3rem auto 0 auto;
+            gap: 60px 0;
+
+            @keyframes fadeIn {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }            
+
+            .items{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: calc(22.875rem - 10px);
+                height: 23.25rem;
+                flex-shrink: 0;
+                margin: 10px;
+                box-sizing: border-box;
+                border-radius: 0rem 0rem 0rem 3.125rem;
+                background: #eee5dd;
+                position: relative;
+
+                h3{
+                    font-size: 2rem;
+                    margin-left: 2rem;
+                    margin-bottom: .5rem;
+                    position: absolute;
+                    top: 24px;
+                }
+
+                p{
+                    color: #737373;
+                    font-family: "DM Serif Display";
+                    font-size: 1.5rem;
+                    line-height: 100%;
+                    margin-left: 2rem;
+                    position: absolute;
+                    top: 58px;
+                }
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    text-align: center;
+                    margin: 0 auto;
+                    position: relative;
+                    bottom: -75px;
+                }
+
+                .chaise{
+                    bottom: -90px;
+                }
+
+                .couch{
+                    bottom: -105px;
+                }
+            }
+        }
+
+        .items-container.filtered {
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 600px) {
+            .items {
+              width: calc(50% - 20px);
+            }
         }
     }
 }
