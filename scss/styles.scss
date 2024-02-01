@@ -69,6 +69,16 @@ main{
         display: flex;
         justify-content: space-between;
         margin-bottom: 6rem;
+        padding-bottom: 1.5rem;
+
+        img{
+            width: 776px;
+            height: 207px;
+            position: absolute;
+            top: 64px;
+            right: -85px;
+            z-index: 0;
+        }
 
         .container{
             position: absolute;
@@ -80,6 +90,7 @@ main{
             flex-shrink: 0;
             background: rgba(#F5F5F5, 0.78);
             backdrop-filter: blur(10px);
+            z-index: 3;
 
             h1{
                 font-size: 4rem;
@@ -96,16 +107,19 @@ main{
         }
 
         .container-1{
-            width: 53.1875rem;
-            height: 32.875rem;
+            width: 52.1875rem;
+            height: 31.875rem;
             flex-shrink: 0;
             border-radius: 0 0 0 4.6875rem;
             background: url("../images/bg-hero-section.png") transparent 50% / cover no-repeat;
             margin-left: auto;
+            z-index: 2;
         }
     }
 
     .second-section{
+        margin-bottom: 6rem;
+
         h2{
             font-size: 3rem;
             margin-bottom: 1.8rem;
@@ -127,7 +141,7 @@ main{
         .items-container{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: stretch;
             margin: 3rem auto 0 auto;
             gap: 60px 0;
