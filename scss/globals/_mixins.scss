@@ -1,1 +1,11 @@
 @use 'variables' as *;
+
+@mixin flex-setup{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin img-size{
+    width: 48.5rem;
+    height: 12.938rem;
+}

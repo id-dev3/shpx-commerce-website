@@ -6,8 +6,7 @@
 /// HEADER SECTION ///
 header{
     .navbar-container{
-        display: flex;
-        justify-content: space-between;
+        @include flex-setup;
         align-items: center;
         margin: 2rem 5rem 3rem 5rem;
 
@@ -24,8 +23,8 @@ header{
         .nav-links{
             .links{
                 color: $main-color;
-                font-size: 1.25rem;
-                font-weight: 500;
+                font-size: $font-size;
+                font-weight: $font-weight;
                 line-height: $line-height-setup;
                 margin-left: 2.5rem;
 
@@ -43,7 +42,7 @@ header{
         .nav-icons{
             .fa-solid{
                 color: $main-color;
-                font-size: 1.25rem;
+                font-size: $font-size;
                 margin-left: 1rem;
                 cursor: pointer;
                 transition: transform .3s ease;
@@ -66,17 +65,15 @@ main{
 
     .hero-section{
         position: relative;
-        display: flex;
-        justify-content: space-between;
+        @include flex-setup;
         margin-bottom: 6rem;
         padding-bottom: 1.5rem;
 
         img{
-            width: 776px;
-            height: 207px;
+            @include img-size;
             position: absolute;
             top: 69px;
-            right: -85px;
+            right: -115px;
             z-index: 0;
         }
 
@@ -99,7 +96,7 @@ main{
             }
 
             p{
-                color: #737373;
+                color: $secondary-color;
                 font-size: 1.5rem;
                 line-height: 120%;
                 width: 21.875rem;
@@ -132,16 +129,15 @@ main{
             .items{
                 color: $main-color;
                 font-size: 1.1rem;
-                font-weight: 500;
+                font-weight: $font-weight;
                 line-height: 100%;
                 margin-right: 2.5rem;
             }
         }
 
         .items-container{
-            display: flex;
+            @include flex-setup;
             flex-wrap: wrap;
-            justify-content: space-between;
             align-items: stretch;
             margin: 3rem auto 0 auto;
             gap: 60px 0;
@@ -158,7 +154,7 @@ main{
                 width: calc(22.875rem - 10px);
                 height: 23.25rem;
                 flex-shrink: 0;
-                margin: 10px;
+                margin: .625rem;
                 box-sizing: border-box;
                 border-radius: 0rem 0rem 0rem 3.125rem;
                 background: #eee5dd;
@@ -173,7 +169,7 @@ main{
                 }
 
                 p{
-                    color: #737373;
+                    color: $secondary-color;
                     font-family: "DM Serif Display";
                     font-size: 1.5rem;
                     line-height: 100%;
@@ -223,8 +219,7 @@ main{
             position: absolute;
             left: -357px;
             top: 151px;
-            width: 776px;
-            height: 207px;
+            @include img-size;
             z-index: 1;
         }
 
@@ -250,8 +245,8 @@ main{
             }
 
             p{
-                color: #737373;
-                font-size: 1.25rem;
+                color: $secondary-color;
+                font-size: $font-size;
                 line-height: 150%;
                 width: 22rem;
                 margin-bottom: 3rem;
@@ -280,6 +275,50 @@ main{
                     .fa-arrow-right{
                         font-size: 1.8rem;
                     }
+                }
+            }
+        }
+    }
+
+    .last-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 15.438rem;
+        border-radius: 0 6.25rem 0 0;
+        background: #eee5dd;
+
+        h3{
+            font-size: 2.5rem;
+            margin: 0 0 1rem 3rem;
+        }
+
+        .btn-last-section{
+            margin: 1.5rem 0 0 3rem;
+
+            .btn-0{
+                background-color: $main-color;
+                padding: .8rem 2.25rem;
+                color: #fff;
+                font-size: 1.15rem;
+                font-weight: $font-weight;
+                margin-right: 1rem;
+
+                &:hover{
+                    background-color: #fff;
+                    color: $main-color;
+                    transition: .25s
+                }
+            }
+
+            .btn-1{
+                @extend .btn-0;
+                background-color: #fff;
+                color: $main-color;
+
+                &:hover{
+                    background-color: $main-color;
+                    color: #fff;
                 }
             }
         }
