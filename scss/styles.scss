@@ -45,7 +45,7 @@ header{
                 font-size: $font-size;
                 margin-left: 1rem;
                 cursor: pointer;
-                transition: transform .3s ease;
+                transition: transform .2s ease;
 
                 &:hover{
                     transform: scale(1.2);
@@ -54,6 +54,20 @@ header{
 
             .fa-magnifying-glass{
                 margin-left: 0;
+            }
+        }
+    }
+}
+
+@include mobile-view{
+    header{
+        .navbar-container{
+            .nav-links{
+                display: none;
+            }
+
+            .nav-icons{
+                display: none;
             }
         }
     }

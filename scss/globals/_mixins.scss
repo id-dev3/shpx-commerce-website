@@ -9,3 +9,9 @@
     width: 48.5rem;
     height: 12.938rem;
 }
+
+@mixin mobile-view{
+    @media only screen and (max-width: 600px){
+      @content;
+    }
+}
