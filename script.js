@@ -1,3 +1,5 @@
+/// START SORT ITEMS ///
+
 window.onload = function(){
     const allItems = document.querySelectorAll('.items-container .items');
     const allLinks = document.querySelectorAll('.sort-items .items');
@@ -39,7 +41,10 @@ window.onload = function(){
     }
 };
 
+/// END SORT ITEMS ///
 
+
+/// START MOBILE NAVIGATION ///
 
 document.addEventListener("DOMContentLoaded", function () {
     const hamburgerCheckbox = document.querySelector(".hamburger input");
@@ -57,3 +62,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
+
+/// END MOBILE NAVIGATION ITEMS ///
+
+
+/// START DROPDOWN MENU ///
+
+document.querySelector("#sort-items .items:first-child").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector("#sort-items").classList.toggle('open');
+});
+
+/// END DROPDOWN MENU ITEMS ///
+
+
