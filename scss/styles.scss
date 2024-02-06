@@ -576,5 +576,31 @@ main{
                 }
             }
         }
+
+        .last-section{
+            max-width: 100%;
+            margin: 0 1rem 1rem 1rem;
+            padding-bottom: 2rem;
+            height: auto;
+
+            h3{
+                font-size: 1.875rem;
+                width: 14.625rem;
+                line-height: 2.5rem;
+                margin: 2rem 0 0 2rem;
+            }
+
+            .btn-last-section{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 1.5rem 0 0 2rem;
+
+                .btn-0, .btn-1{
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    width: 12.188rem;
+                }
+            }
+        }
     }
 }
