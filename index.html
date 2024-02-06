@@ -16,13 +16,15 @@
 
     <!-------- SCSS File -------->
     <link rel="stylesheet" href="./dist/styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
     <!-------- Header Section -------->
     <header>
         <nav class="navbar-container">
-            <div class="nav-logo">
+            <div class="nav-logo" data-aos="fade-right" data-aos-duration="1900">
                 <a href="" class="logo">SHPX</a>
             </div>
 
@@ -34,14 +36,14 @@
                 </svg>
             </label>
 
-            <div class="nav-links">
+            <div class="nav-links" data-aos="fade-down" data-aos-duration="1900">
                 <a href="" class="links links-1">Home</a>
                 <a href="" class="links">About</a>
                 <a href="" class="links">Products</a>
                 <a href="" class="links">Contact</a>
             </div>
 
-            <div class="nav-icons">
+            <div class="nav-icons" data-aos="fade-left" data-aos-duration="1900">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-arrow-down"></i>
             </div>
@@ -51,8 +53,8 @@
     <!-------- Main Section -------->
     <main>
         <section class="hero-section">
-            <img src="./images/rectangle-1.svg" alt="Rectangle form">
-            <div class="container">
+            <img src="./images/rectangle-1.svg" alt="Rectangle form" data-aos="fade-left" data-aos-duration="1900">
+            <div class="container" data-aos="fade-right" data-aos-duration="1900">
                 <h1>
                     Modern Interior for your <br> Dream House
                 </h1>
@@ -62,14 +64,14 @@
                 </p>
             </div>
 
-            <div class="container-1">
+            <div class="container-1" data-aos="fade-left" data-aos-duration="1900">
             </div>
         </section>
 
         <section class="second-section">
-            <h2>Products</h2>
+            <h2 data-aos="fade-left" data-aos-duration="1900">Products</h2>
 
-            <div id="sort-items" class="sort-items">
+            <div id="sort-items" class="sort-items" data-aos="fade-up" data-aos-duration="1900">
                 <a href="" class="items">All</a>
                 <a href="" class="items">Lamp</a>
                 <a href="" class="items">Chair</a>
@@ -78,32 +80,32 @@
             </div>
 
             <div class="items-container">
-                <div class="items">
+                <div class="items" data-aos="fade-down" data-aos-duration="1900">
                     <h3>Interior Pouf</h3>
                     <p>$18.00</p>
                     <img class="pouf" src="./images/interior-pouf.png" alt="Interior pouf">
                 </div>
-                <div class="items">
+                <div class="items" data-aos="fade-up" data-aos-duration="1900">
                     <h3>Chaise Molle</h3>
                     <p>$18.00</p>
                     <img class="chaise" src="./images/chaise-molle.png" alt="Chaise molle">
                 </div>
-                <div class="items">
+                <div class="items" data-aos="fade-down" data-aos-duration="1900">
                     <h3>Lamp Floor</h3>
                     <p>$18.00</p>
                     <img class="lamp" src="./images/lamp-floor-tripod-wood.png" alt="Lamp floor">
                 </div>
-                <div class="items">
+                <div class="items" data-aos="fade-up" data-aos-duration="1900">
                     <h3>Lounge Chair</h3>
                     <p>$18.00</p>
                     <img class="chair" src="./images/lounge-chair.png" alt="Lounge chair">
                 </div>
-                <div class="items">
+                <div class="items" data-aos="fade-down" data-aos-duration="1900">
                     <h3>TV Cabinet</h3>
                     <p>$48.00</p>
                     <img class="cabinet" src="./images/tv-cabinet-material.png" alt="TV cabinet">
                 </div>
-                <div class="items">
+                <div class="items" data-aos="fade-up" data-aos-duration="1900">
                     <h3>Couch Sofa</h3>
                     <p>$78.00</p>
                     <img class="couch" src="./images/couch-sofa-bed-furniture.png" alt="Couch sofa">
@@ -112,13 +114,13 @@
         </section>
 
         <section class="third-section">
-            <img class="showcase" src="./images/rectangle-1.svg" alt="">
+            <img class="showcase" src="./images/rectangle-1.svg" alt="Rectangle image" data-aos="fade-right" data-aos-duration="1900">
             
-            <div class="img">
+            <div class="img" data-aos="fade-right" data-aos-duration="1900">
                 <img src="./images/showcase-1.png" alt="Showcase image">
             </div>
 
-            <div class="text">
+            <div class="text" data-aos="fade-left" data-aos-duration="1900">
                 <h2>Showcase</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -138,9 +140,9 @@
         </section>
 
         <section class="last-section">
-            <h3>Get your quotation today</h3>
+            <h3 data-aos="fade-left" data-aos-duration="1900">Get your quotation today</h3>
 
-            <div class="btn-last-section">
+            <div class="btn-last-section" data-aos="fade-up" data-aos-duration="1900">
                 <a class="btn-0" href="">Quote me</a>
                 <a class="btn-1" href="">Contact Sales</a>
             </div>
@@ -148,5 +150,10 @@
     </main>
 
     <script src="./script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
